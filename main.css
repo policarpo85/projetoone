@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #FFF8E1 ;
+}
+
+header {
+    display: inline;
+    justify-content: space-between;
+    animation: fadein 0.7s ease-in-out;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.cabecalho {
+    background-color: #1B5E20;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.589);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    margin: 0;
+}
+
+.cabecalho img {
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+}
+
+.cabecalho nav {
+    display: inline;
+    justify-content: space-between;
+}
+
+.cabecalho nav ul {
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    gap: 55px;
+}
+
+.cabecalho nav ul li {
+    transition: transform 0.3s ease;
+}
+
+.cabecalho nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    justify-content: space-between;
+    transition: color 0.3s ease;
+}
+
+.cabecalho nav ul li:hover {
+    transform: scale(1.1);
+}
+
+.cabecalho nav ul li a:hover {
+    color: #FFEB3B;
+}
+#sobre-nos {
+  display: flex;       /* Coloca as duas divs internas lado a lado */
+  align-items: flex-start; /* Alinha o texto verticalmente com o meio da foto */
+  gap: 40px;           /* Cria o espaço entre a foto e o texto */
+  background-color: #FFF8E1; /* Define a cor de fundo bege claro */
+  padding: 50px;       /* Espaço interno para o conteúdo não grudar na borda */
+  border-radius: 20px; /* Arredonda as quinas de toda a seção */
+}
+
+#sobre-nos img {
+  width: 250px;        /* Define um tamanho fixo para a foto */
+  border-radius: 30px; /* Arredonda as pontas da foto como no modelo */
+  height: auto;  /* Isso garante que a foto não fique "esticada" ou deformada */
+}
+
+#sobre-nos h1 {
+  margin-top: 0;       /* Remove o espaço extra acima do título */
+  font-family: sans-serif;
+  text-align: left;    /* Garante que o texto esteja alinhado à esquerda */
+  max-width: 600px;    /* Impede que o texto fique muito largo */
+  line-height: 1.6;    /* Dá um respiro entre as linhas do texto */
+  margin-bottom: 20px; /* Afasta o título do primeiro parágrafo */
+  text-transform: uppercase; /* Deixa em maiúsculo se desejar igual à foto */
+}
+#sobre-nos p {
+    margin-bottom: 10px; /* Cria o espaço entre um parágrafo e outro */
+    color: #333;         /* Uma cor cinza escuro para melhor leitura */
+}
+
+ 
