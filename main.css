@@ -103,9 +103,32 @@ header {
     font-size: 48px;
 }
 
-#sobre-nos p {
-    margin-bottom: 15px; /* Cria o espaço entre um parágrafo e outro */
-    color: #000000;         /* Uma cor cinza escuro para melhor leitura */
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+
+.localizacao {
+  display: flex;             /* Ativa o modo flexível */
+  justify-content: space-between; /* Empurra um bloco para cada ponta */
+  align-items: center;       /* Alinha a altura deles pelo meio */
+  padding: 40px;
+}
+/* Ajuste para o container principal */
+.conteudo-localizacao {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap; /* Importante para não quebrar no celular */
+}
+
+/* Faz o mapa e a imagem ficarem lado a lado */
+.enderecos {
+  display: flex;
+  gap: 15px;
+}
+
+
+.enderecos img, .enderecos iframe {
+  width: 300px; /* Tamanho sugerido */
+  height: 300px; 
+  border-radius: 30px; /* Mantendo o estilo arredondado que você criou */
+  object-fit: cover;
 }
