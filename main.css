@@ -77,6 +77,12 @@ header {
     animation: fadein 0.7s ease-in-out;
 }
 
+.secao-sobre p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
 #sobre-nos {
     display: flex;       /* Coloca as duas divs internas lado a lado */
     align-items: flex-start; /* Alinha o texto verticalmente com o meio da foto */
@@ -105,30 +111,30 @@ header {
 
 
 .localizacao {
-  display: flex;             /* Ativa o modo flexível */
-  justify-content: space-between; /* Empurra um bloco para cada ponta */
-  align-items: center;       /* Alinha a altura deles pelo meio */
-  padding: 40px;
+    display: flex;             /* Ativa o modo flexível */
+    justify-content: space-between; /* Empurra um bloco para cada ponta */
+    align-items: center;       /* Alinha a altura deles pelo meio */
+    padding: 40px;
 }
 /* Ajuste para o container principal */
 .conteudo-localizacao {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
-  flex-wrap: wrap; /* Importante para não quebrar no celular */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap; /* Importante para não quebrar no celular */
 }
 
 /* Faz o mapa e a imagem ficarem lado a lado */
 .enderecos {
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 
 .enderecos img, .enderecos iframe {
-  width: 300px; /* Tamanho sugerido */
-  height: 300px; 
-  border-radius: 30px; /* Mantendo o estilo arredondado que você criou */
-  object-fit: cover;
+    width: 300px; /* Tamanho sugerido */
+    height: 300px; 
+    border-radius: 30px; /* Mantendo o estilo arredondado que você criou */
+    object-fit: cover;
 }
