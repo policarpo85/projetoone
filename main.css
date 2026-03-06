@@ -69,15 +69,6 @@ header {
     color: #FFEB3B;
 }
 
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 .secao-sobre {
     border-radius: 10px;
     margin: 28px auto;
