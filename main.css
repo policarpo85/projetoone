@@ -18,8 +18,6 @@ body {
 }
 
 header {
-    display: inline;
-    justify-content: space-between;
     animation: fadein 0.7s ease-in-out;
     font-family: 'Archivo Black', sans-serif;
 }
@@ -43,7 +41,6 @@ header {
 
 .cabecalho nav {
     display: inline;
-    justify-content: space-between;
 }
 
 .cabecalho nav ul {
@@ -61,7 +58,6 @@ header {
     text-decoration: none;
     color: white;
     font-size: 32px;
-    justify-content: space-between;
     transition: color 0.3s ease;
 }
 
@@ -72,33 +68,44 @@ header {
 .cabecalho nav ul li a:hover {
     color: #FFEB3B;
 }
+
+.secao-sobre {
+    border-radius: 10px;
+    margin: 28px auto;
+    max-width: 1200px;
+    padding: 10px;
+    animation: fadein 0.7s ease-in-out;
+}
+
 #sobre-nos {
-  display: flex;       /* Coloca as duas divs internas lado a lado */
-  align-items: flex-start; /* Alinha o texto verticalmente com o meio da foto */
-  gap: 40px;           /* Cria o espaço entre a foto e o texto */
-  background-color: #FFF8E1; /* Define a cor de fundo bege claro */
-  padding: 50px;       /* Espaço interno para o conteúdo não grudar na borda */
-  border-radius: 20px; /* Arredonda as quinas de toda a seção */
+    display: flex;       /* Coloca as duas divs internas lado a lado */
+    align-items: flex-start; /* Alinha o texto verticalmente com o meio da foto */
+    gap: 40px;           /* Cria o espaço entre a foto e o texto */
+    padding: 50px;       /* Espaço interno para o conteúdo não grudar na borda */
+    justify-content: center;
 }
 
 #sobre-nos img {
-  width: 250px;        /* Define um tamanho fixo para a foto */
-  border-radius: 30px; /* Arredonda as pontas da foto como no modelo */
-  height: auto;  /* Isso garante que a foto não fique "esticada" ou deformada */
+    width: 350px;        /* Define um tamanho fixo para a foto */
+    border-radius: 30px; /* Arredonda as pontas da foto como no modelo */
+    height: auto;  /* Isso garante que a foto não fique "esticada" ou deformada */
 }
 
 #sobre-nos h1 {
-  margin-top: 0;       /* Remove o espaço extra acima do título */
-  font-family: sans-serif;
-  text-align: left;    /* Garante que o texto esteja alinhado à esquerda */
-  max-width: 600px;    /* Impede que o texto fique muito largo */
-  line-height: 1.6;    /* Dá um respiro entre as linhas do texto */
-  margin-bottom: 20px; /* Afasta o título do primeiro parágrafo */
-  text-transform: uppercase; /* Deixa em maiúsculo se desejar igual à foto */
-}
-#sobre-nos p {
-    margin-bottom: 10px; /* Cria o espaço entre um parágrafo e outro */
-    color: #333;         /* Uma cor cinza escuro para melhor leitura */
+    color: #943b00;
+    margin-top: 0;       /* Remove o espaço extra acima do título */
+    font-family: 'Archivo Black', sans-serif;
+    text-align: left;    /* Garante que o texto esteja alinhado à esquerda */
+    max-width: 600px;    /* Impede que o texto fique muito largo */
+    line-height: 1.6;    /* Dá um respiro entre as linhas do texto */
+    margin-bottom: 20px; /* Afasta o título do primeiro parágrafo */
+    text-transform: uppercase; /* Deixa em maiúsculo se desejar igual à foto */
+    font-size: 48px;
 }
 
- 
+#sobre-nos p {
+    margin-bottom: 15px; /* Cria o espaço entre um parágrafo e outro */
+    color: #000000;         /* Uma cor cinza escuro para melhor leitura */
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
