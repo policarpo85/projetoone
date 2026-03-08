@@ -4,17 +4,9 @@
     box-sizing: border-box;
 }
 
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 body {
-    background-color: #FFF8E1 ;
+    background-color: #e8e1cb ;
 }
 
 header {
@@ -29,102 +21,234 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: 10px;
+    height: 100%x;
 }
 
 .cabecalho img {
-    width: 150px;
-    height: 150px;
+    width: 60px;
+    height: 60px;
     margin-left: 20px;
 }
 
-.cabecalho nav {
-    display: inline;
-}
-
-.cabecalho nav ul {
+.cabecalho ul{
     list-style: none;
-    padding: 15px;
     display: flex;
-    gap: 55px;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 
-.cabecalho nav ul li {
-    transition: transform 0.3s ease;
-}
-
-.cabecalho nav ul li a {
+.cabecalho a {
     text-decoration: none;
     color: white;
-    font-size: 32px;
-    transition: color 0.3s ease;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: .3s;
 }
 
-.cabecalho nav ul li:hover {
+.cabecalho li:hover {
     transform: scale(1.1);
 }
 
-.cabecalho nav ul li a:hover {
+.cabecalho a:hover {
     color: #FFEB3B;
 }
 
-.secao-sobre {
-    border-radius: 10px;
-    margin: 28px auto;
-    max-width: 1200px;
-    padding: 10px;
-    animation: fadein 0.7s ease-in-out;
+.logo02 {
+object-fit: cover;
+width: 100%;
+height: 400px;
+position: relative;
+border-bottom: #943b00 20%;
 }
 
-.secao-sobre p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-    margin-bottom: 15px;
+.titulo {
+position: absolute;
+left: 20px;
+bottom: 200px;
+
+
 }
 
-#sobre-nos {
-    display: flex;       /* Coloca as duas divs internas lado a lado */
-    align-items: flex-start; /* Alinha o texto verticalmente com o meio da foto */
-    gap: 40px;           /* Cria o espaço entre a foto e o texto */
-    padding: 50px;       /* Espaço interno para o conteúdo não grudar na borda */
-    justify-content: center;
+.inicio{
+    position: relative;
 }
 
-#sobre-nos img {
-    width: 350px;        /* Define um tamanho fixo para a foto */
-    border-radius: 30px; /* Arredonda as pontas da foto como no modelo */
-    height: auto;  /* Isso garante que a foto não fique "esticada" ou deformada */
+.inicio::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to bottom, rgba(64, 61, 61, 0), rgb(223, 219, 206));
 }
 
-#sobre-nos h1 {
-    color: #943b00;
-    margin-top: 0;       /* Remove o espaço extra acima do título */
-    font-family: 'Archivo Black', sans-serif;
-    text-align: left;    /* Garante que o texto esteja alinhado à esquerda */
-    max-width: 600px;    /* Impede que o texto fique muito largo */
-    line-height: 1.6;    /* Dá um respiro entre as linhas do texto */
-    margin-bottom: 20px; /* Afasta o título do primeiro parágrafo */
-    text-transform: uppercase; /* Deixa em maiúsculo se desejar igual à foto */
-    font-size: 48px;
+h1 {
+ color: rgb(228, 218, 204);
+ width: auto;
+ font-size: 30px;
+ font-family:Arial, Helvetica, sans-serif
+
 }
 
+
+#sobre-nos{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:40px;
+    padding:50px;
+}
+
+
+#sobre-nos img{
+    width:350px;
+    border-radius:30px;
+}
+
+
+#sobre-nos h1{
+    color:#943b00;
+    font:48px 'Archivo Black', sans-serif;
+    text-transform:uppercase;
+    line-height:1.6;
+    margin-bottom:20px;
+    max-width:600px;
+}
+
+
+#sobre-nos p{
+    font:25px 'Roboto', sans-serif;
+    margin-bottom:15px;
+}
+
+.nossos-sabores{
+    max-width:1200px;
+    margin:80px auto;
+    padding:40px;
+    text-align:center;
+}
+
+.nossos-sabores h1{
+    font-family:'Archivo Black', sans-serif;
+    font-size:42px;
+    color:#943b00;
+    margin-bottom:40px;
+}
+
+.nossos-sabores ul{
+    list-style:none;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+    gap:20px;
+    padding:0;
+}
+
+.nossos-sabores li{
+    font-family:'Roboto', sans-serif;
+    font-size:22px;
+    background:#f5f1e8;
+    padding:15px;
+    border-radius:10px;
+}
+
+.sugestao{
+    max-width:700px;
+    margin:80px auto;
+    text-align:center;
+}
+
+.sugestao h2{
+    font:40px 'Archivo Black', sans-serif;
+    color:#943b00;
+    margin-bottom:10px;
+}
+
+.sugestao p{
+    font:20px 'Roboto', sans-serif;
+    margin-bottom:30px;
+}
+
+.sugestao form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.sugestao input,
+.sugestao textarea,
+.sugestao button{
+    padding:12px;
+    border-radius:8px;
+    font:16px 'Roboto', sans-serif;
+}
+
+.sugestao input,
+.sugestao textarea{
+    border:1px solid #ccc;
+}
+
+.sugestao button{
+    border:none;
+    background:#943b00;
+    color:#fff;
+    cursor:pointer;
+}
+
+.sugestao button:hover{
+    background:#b84a00;
+}
+
+.localizacao{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px;
+    background-color: #1B5E20;
+    color:white;
+}
+
+.info-local{
+    max-width:400px;
+    font-family:'Roboto', sans-serif;
+}
+
+.info-local h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.info-local h3{
+    margin-top:20px;
+    font-size:20px;
+}
+
+.info-local p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+.mapa iframe{
+    border-radius:8px;
+}
 
 .localizacao {
-    display: flex;             /* Ativa o modo flexível */
-    justify-content: space-between; /* Empurra um bloco para cada ponta */
-    align-items: center;       /* Alinha a altura deles pelo meio */
+    display: flex;             
+    justify-content: space-between; 
+    align-items: center;       
     padding: 40px;
 }
-/* Ajuste para o container principal */
+
 .conteudo-localizacao {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 30px;
-    flex-wrap: wrap; /* Importante para não quebrar no celular */
-}
+    flex-wrap: wrap; 
 
-/* Faz o mapa e a imagem ficarem lado a lado */
+}
 .enderecos {
     display: flex;
     gap: 15px;
@@ -132,8 +256,8 @@ header {
 
 
 .enderecos img, .enderecos iframe {
-    width: 300px; /* Tamanho sugerido */
+    width: 300px; 
     height: 300px; 
-    border-radius: 30px; /* Mantendo o estilo arredondado que você criou */
+    border-radius: 30px; 
     object-fit: cover;
 }
