@@ -211,7 +211,7 @@ h1 {
 }
 
 .info-local{
-    max-width:400px;
+    max-width: 400px;
     font-family:'Roboto', sans-serif;
 }
 
@@ -254,17 +254,31 @@ h1 {
     gap: 15px;
 }
 
-.info-local a{
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.info-local a:hover {
-    color: rgb(83, 156, 11);
-}
 .enderecos img, .enderecos iframe {
     width: 300px; 
     height: 300px; 
     border-radius: 30px; 
     object-fit: cover;
+}
+
+.links-sociais {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #FFEB3B;
+    color: #000000;
+    text-decoration: none;
+    font-size: 10px;
+    gap: 10px;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+    text-align: center;
+
+}
+
+.links-sociais:hover {
+    transform: scale(1.1);
+    background-color: #dbc501;
 }
